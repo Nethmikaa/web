@@ -6,19 +6,16 @@
     <title>Private Video</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        iframe { max-width: 100%; }
     </style>
 </head>
 <body>
     <h2>Watch This Video</h2>
-    <div id="video-container">
-        <button onclick="openInNewTab()">Open Video</button>
-    </div>
-
-    <script>
-        function openInNewTab() {
-            window.open("https://youtu.be/xlbvPlm3_zI", "_blank");
-        }
-    </script>
+    <iframe id="youtube-player" frameborder="0" allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" 
+        width="640" height="360"
+        src="https://www.youtube.com/embed/aMNZzQl6Z88?autoplay=0&controls=0&disablekb=1&playsinline=1&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&origin=https%3A%2F%2Fnethmikaa.github.io">
+    </iframe>
 </body>
 </html>
